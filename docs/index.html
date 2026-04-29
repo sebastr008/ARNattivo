@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image Targets</title><meta itemprop="name" content="Image Targets"><meta name="twitter:title" content="Image Targets"><meta property="og:title" content="Image Targets"><meta property="og:site_name" content="Image Targets"><meta name="description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta itemprop="description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta property="og:description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta name="twitter:description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" async crossorigin="anonymous" data-preload-chunks="slam"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script><meta property="og:image" content="https://8thwall.org/studio-image-targets-example/assets/preview.png"></head><body><div id="introPopup" style="position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 24px;"><div style="max-width: 360px;
+      background: rgba(20, 20, 30, 0.95);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 18px;
+      padding: 28px 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.45);"><h2 style="margin: 0 0 14px; font-size: 24px;">Enfoca las imágenes</h2><p style="margin: 0 0 22px; font-size: 18px; line-height: 1.4;">Enfoca las imágenes para revelar su secreto!</p><button id="startExperience" style="border: none;
+        border-radius: 12px;
+        padding: 12px 22px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background: #5b5cff;
+        cursor: pointer;">Entendido</button></div></div><script>document.getElementById('startExperience').addEventListener('click', () => {
+      // Este click también desbloquea el audio en el navegador.
+      const videos = document.querySelectorAll('video')
+
+      videos.forEach((video) => {
+        video.muted = false
+        video.volume = 1
+      })
+
+      document.getElementById('introPopup').style.display = 'none'
+    }, { once: true })</script><script src="bundle.js"></script></body></html>

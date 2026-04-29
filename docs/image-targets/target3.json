@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/target3_luminance.jpg",
+  "metadata": null,
+  "name": "target3",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 148,
+    "width": 886,
+    "height": 1181,
+    "isRotated": false,
+    "originalWidth": 1181,
+    "originalHeight": 1181
+  },
+  "resources": {
+    "originalImage": "target3_original.jpg",
+    "croppedImage": "target3_cropped.jpg",
+    "thumbnailImage": "target3_thumbnail.jpg",
+    "luminanceImage": "target3_luminance.jpg"
+  },
+  "created": 1777430723978,
+  "updated": 1777430723978
+}
